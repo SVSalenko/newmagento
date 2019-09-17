@@ -15,10 +15,8 @@ class WriteHtml implements \Magento\Framework\Event\ObserverInterface
   public function execute(\Magento\Framework\Event\Observer $observer)
   {
     $response = $observer->getEvent()->getResponse();
-    ob_start();
-    echo $response."\n",FILE_APPEND;
-    $html = ob_get_contents();
-    ob_end_clean();
+    $response->getBody();
+    $html = $response;
     $this->logger->info($html);
   }
 
