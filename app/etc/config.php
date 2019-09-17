@@ -216,6 +216,7 @@ return [
         'Shellpea_HelloWorld' => 1,
         'Shellpea_Module' => 1,
         'Shellpea_NewModule' => 1,
+        'Shellpea_WriteHtml' => 1,
         'Temando_Shipping' => 1,
         'Vertex_Tax' => 1
     ]
