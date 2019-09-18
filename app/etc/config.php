@@ -212,11 +212,12 @@ return [
         'Klarna_Kp' => 1,
         'Magento_PaypalReCaptcha' => 1,
         'MSP_TwoFactorAuth' => 1,
-        'Shellpea_Event' => 1,
-        'Shellpea_HelloWorld' => 1,
-        'Shellpea_Module' => 1,
-        'Shellpea_NewModule' => 1,
-        'Shellpea_WriteHtml' => 1,
+        'Shellpea_Event' => 0,
+        'Shellpea_HelloWorld' => 0,
+        'Shellpea_Module' => 0,
+        'Shellpea_NewModule' => 0,
+        'Shellpea_WriteHtml' => 0,
+        'Shellpea_WriteRouters' => 1,
         'Temando_Shipping' => 1,
         'Vertex_Tax' => 1
     ]
