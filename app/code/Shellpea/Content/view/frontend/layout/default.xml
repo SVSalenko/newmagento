@@ -6,7 +6,12 @@
     </referenceContainer>
 
     <referenceBlock name="top.links">
-        <block class="Magento\Framework\View\Element\Template" name="contentt_index_index" template="Shellpea_Content::asd.phtml"/>
+        <block class="Magento\Framework\View\Element\Html\Link" name="contentt-index-index">
+            <arguments>
+                <argument name="label" xsi:type="string" translate="true">My Content</argument>
+                <argument name="path" xsi:type="string" translate="true">content</argument>
+            </arguments>
+        </block>
     </referenceBlock>
 
 </page>
