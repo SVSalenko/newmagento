@@ -13,25 +13,25 @@
 <tr><td>10</td><td>20</td><td>40</td><td>60</td><td>80</td><td>100</td></tr>
 </table> -->
 
-<table border = 1>
+<!-- <table border = 1>
 <?php
-    echo "<tr>";
-    for ($i=0; $i <= 10; $i=$i+2 ) {
-        echo "<td> $i </td>";
-    }
-    echo "</tr><tr>";
-    for ( $i = 2; $i <= 10; $i=$i+2 ) {
-            echo "<td> $i </td>";
-        for ( $j = 1; $j <= 5; $j++ ) {
-            echo "<td>" . $i*$j*2 . "</td>";
-        }
-        echo "</tr>";
-    }
+    // echo "<tr>";
+    // for ($i=0; $i <= 10; $i=$i+2 ) {
+    //     echo "<td> $i </td>";
+    // }
+    // echo "</tr><tr>";
+    // for ( $i = 2; $i <= 10; $i=$i+2 ) {
+    //         echo "<td> $i </td>";
+    //     for ( $j = 1; $j <= 5; $j++ ) {
+    //         echo "<td>" . $i*$j*2 . "</td>";
+    //     }
+    //     echo "</tr><tr>";
+    // }
 ?>
-<table>
+<table> -->
 
 
-<table border = 1>
+<!-- <table border = 1>
     <script language="JavaScript">
         document.write("<tr>");
         for ( i=0; i <= 10; i=i+2 ) {
@@ -43,7 +43,21 @@
             for ( j = 1; j <= 5; j++ ) {
                 document.write("<td>" + (i*j*2)+ "</td>");
             }
-            document.write("</tr>");
+            document.write("</tr><tr>");
         }
     </script>
-<table>
+<table> -->
+
+
+<button id="speed">Успей нажать</button>
+
+<script language="JavaScript">
+    setTimeout(function() {document.getElementById("speed").style.display = 'none'}, 3000);
+</script>
+
+
+<script language="JavaScript">
+var style = document.createElement('style');
+style.innerHTML = "a  { color: red !important; }";
+document.head.appendChild(style);
+</script>
