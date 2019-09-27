@@ -8,14 +8,5 @@
                 </arguments>
             </block>
         </referenceContainer>
-
-        <!-- <referenceBlock name="content_index_index">
-            <block class="Magento\Framework\View\Element\Html\Link">
-                <arguments>
-                    <argument name="test" xsi:type="string" translate="true">footer links"</argument>
-                </arguments>
-            </block>
-        </referenceBlock> -->
-
     </body>
 </page>

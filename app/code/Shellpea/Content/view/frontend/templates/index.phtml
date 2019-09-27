@@ -1,3 +1,49 @@
 <div style="background-color: #000">
     <h2 style="color: <?php if(!$block->getTest()) { echo "lightskyblue"; } else { echo $block->getTest(); } ?>">Hello World</h2>
 </div>
+
+
+
+<!-- <table border = 1>
+<tr><td>0</td><td>2</td><td>4</td><td>6</td><td>8</td><td>10</td></tr>
+<tr><td>2</td><td>4</td><td>8</td><td>12</td><td>16</td><td>20</td></tr>
+<tr><td>4</td><td>8</td><td>16</td><td>24</td><td>32</td><td>40</td></tr>
+<tr><td>6</td><td>12</td><td>24</td><td>36</td><td>48</td><td>60</td></tr>
+<tr><td>8</td><td>16</td><td>32</td><td>48</td><td>64</td><td>80</td></tr>
+<tr><td>10</td><td>20</td><td>40</td><td>60</td><td>80</td><td>100</td></tr>
+</table> -->
+
+<table border = 1>
+<?php
+    echo "<tr>";
+    for ($i=0; $i <= 10; $i=$i+2 ) {
+        echo "<td> $i </td>";
+    }
+    echo "</tr><tr>";
+    for ( $i = 2; $i <= 10; $i=$i+2 ) {
+            echo "<td> $i </td>";
+        for ( $j = 1; $j <= 5; $j++ ) {
+            echo "<td>" . $i*$j*2 . "</td>";
+        }
+        echo "</tr>";
+    }
+?>
+<table>
+
+
+<table border = 1>
+    <script language="JavaScript">
+        document.write("<tr>");
+        for ( i=0; i <= 10; i=i+2 ) {
+            document.write("<td>" + i + "</td>");
+        }
+        document.write("</tr><tr>");
+        for ( i = 2; i <= 10; i=i+2 ) {
+                document.write("<td>" + i + "</td>");
+            for ( j = 1; j <= 5; j++ ) {
+                document.write("<td>" + (i*j*2)+ "</td>");
+            }
+            document.write("</tr>");
+        }
+    </script>
+<table>
