@@ -213,14 +213,18 @@ return [
         'Magento_PaypalReCaptcha' => 1,
         'MSP_TwoFactorAuth' => 1,
         'Shellpea_ActionName' => 0,
+        'Shellpea_Admin' => 0,
         'Shellpea_Attributes' => 0,
         'Shellpea_Block' => 0,
+        'Shellpea_Castom' => 0,
         'Shellpea_Content' => 0,
         'Shellpea_Event' => 0,
         'Shellpea_HelloWorld' => 0,
         'Shellpea_Module' => 0,
         'Shellpea_NewModule' => 0,
         'Shellpea_Template' => 0,
+        'Shellpea_WriteHtml' => 0,
+        'Shellpea_WriteRouters' => 0,
         'Temando_Shipping' => 1,
         'Vertex_Tax' => 1
     ]

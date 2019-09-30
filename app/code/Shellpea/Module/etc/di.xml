@@ -2,15 +2,15 @@
 	<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
 
 		<type name="Magento\Catalog\Api\Data\ProductInterface">
-			<plugin name="PriceChangePlugin" type="Shellpea\Module\Plugin\PriceChangePlugin" sortOrder="1" disabled="false" />
+			<plugin name="PriceChangePlugin" type="Shellpea\Module\Plugin\PriceChangePlugin" sortOrder="1" disabled="true" />
 		</type>
 
 		<type name="Magento\Theme\Block\Html\Footer">
-			<plugin name="FooterPlugin" type="Shellpea\Module\Plugin\FooterPlugin" sortOrder="1" disabled="false" />
+			<plugin name="FooterPlugin" type="Shellpea\Module\Plugin\FooterPlugin" sortOrder="1" disabled="true" />
 		</type>
 
 		<type name="Magento\Theme\Block\Html\Breadcrumbs">
-			<plugin name="BreadcrumbsPlugin" type="Shellpea\Module\Plugin\BreadcrumbsPlugin" sortOrder="1" disabled="false" />
+			<plugin name="BreadcrumbsPlugin" type="Shellpea\Module\Plugin\BreadcrumbsPlugin" sortOrder="1" disabled="true" />
 		</type>
 
 	</config>
