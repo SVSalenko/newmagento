@@ -17,7 +17,7 @@
         "allure-framework/allure-phpunit": "~1.2.0",
         "friendsofphp/php-cs-fixer": "~2.13.0",
         "lusitanian/oauth": "~0.8.10",
-        "magento/magento-coding-standard": "~1.0.0",
+        "magento/magento-coding-standard": "^4.0",
         "magento/magento2-functional-testing-framework": "~2.3.14",
         "pdepend/pdepend": "2.5.2",
         "phpmd/phpmd": "@stable",
@@ -69,5 +69,13 @@
     ],
     "extra": {
         "magento-force": "override"
-    }
+    },
+    "scripts": {
+    "post-install-cmd": [
+      "([ $COMPOSER_DEV_MODE -eq 0 ] || vendor/bin/phpcs --config-set installed_paths ../../magento/magento-coding-standard/)"
+    ],
+    "post-update-cmd": [
+      "([ $COMPOSER_DEV_MODE -eq 0 ] || vendor/bin/phpcs --config-set installed_paths ../../magento/magento-coding-standard/)"
+    ]
+}
 }
