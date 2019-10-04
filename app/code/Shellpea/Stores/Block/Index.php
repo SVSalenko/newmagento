@@ -2,17 +2,19 @@
 
 namespace Shellpea\Stores\Block;
 
-use Magento\Framework\App\ObjectManager;
-
 class Index extends \Magento\Framework\View\Element\Template
 {
+    protected $categoryFactory;
+
     protected $storeManager;
 
     public function __construct(
+        \Magento\Catalog\Model\CategoryFactory $categoryFactory,
         \Magento\Backend\Block\Template\Context $context,
         \Magento\Store\Model\StoreManagerInterface $storeManager,
         array $data = []
     ) {
+        $this->_categoryFactory = $categoryFactory;
         $this->_storeManager = $storeManager;
         parent::__construct($context, $data);
     }
@@ -20,10 +22,9 @@ class Index extends \Magento\Framework\View\Element\Template
     public function getStoresName()
     {
         $result = [];
-        $_objectManager = ObjectManager::getInstance();
 
         foreach ($this->_storeManager->getStores() as $store) {
-            $category = $_objectManager->create('Magento\Catalog\Model\Category')->load($store->getRootCategoryId());
+            $category = $this->_categoryFactory->create()->load($store->getRootCategoryId());
             $result[] = $store->getName() . ' - ' . $category->getName();
         }
         return $result;
