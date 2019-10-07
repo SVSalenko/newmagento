@@ -4,5 +4,6 @@
         <constraint xsi:type="primary" referenceId="PRIMARY">
             <column name="my_id"/>
         </constraint>
+        <column xsi:type="varchar" name="title" nullable="false" length="255" comment="Title"/>
     </table>
 </schema>
