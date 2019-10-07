@@ -1,0 +1,8 @@
+<schema xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:Setup/Declaration/Schema/etc/schema.xsd">
+    <table name="MyFirstTable" resource="default" engine="innodb" comment="World">
+        <column xsi:type="int" name="my_id"  padding="11" unsigned="false" nullable="false" identity="true" comment="Hello"/>
+        <constraint xsi:type="primary" referenceId="PRIMARY">
+            <column name="my_id"/>
+        </constraint>
+    </table>
+</schema>
